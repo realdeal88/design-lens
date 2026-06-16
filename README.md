@@ -8,7 +8,7 @@ Turns a vague *"make it good"* into concrete, defensible decisions. Fires whenev
 matters — on any platform, even when nobody says the word "design."
 
 [![validate](https://github.com/realdeal88/design-lens/actions/workflows/validate.yml/badge.svg)](https://github.com/realdeal88/design-lens/actions/workflows/validate.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](./LICENSE)
+[![License: CC BY-ND 4.0](https://img.shields.io/badge/License-CC%20BY--ND%204.0-black.svg)](./LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-plugin-d97757.svg)](https://code.claude.com/docs/en/plugins)
 
 <br>
@@ -113,4 +113,4 @@ platform-agnostic. It guides judgment; it isn't a style guide for one toolkit.
 
 ## License
 
-[MIT](./LICENSE) © 2026 realdeal88
+[CC BY-ND 4.0](./LICENSE) © 2026 realdeal88

@@ -50,4 +50,4 @@ in [CHANGELOG.md](./CHANGELOG.md).
 
 ## License
 
-By contributing, you agree your contributions are licensed under the [MIT License](./LICENSE).
+By contributing, you agree that your contribution is assigned to the project owner (realdeal88) and released as part of this work under its [CC BY-ND 4.0 License](./LICENSE). You may not distribute your own modified version of this project.
