@@ -11,6 +11,10 @@ matters — on any platform, even when nobody says the word "design."
 [![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](./LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-plugin-d97757.svg)](https://code.claude.com/docs/en/plugins)
 
+<br>
+
+<img src="assets/demo.gif" alt="design-lens running its eight-lens review — flagging Agency, Responsibility, and Simplicity gaps on a signup screen, then naming the highest-leverage fix" width="840">
+
 </div>
 
 ---
