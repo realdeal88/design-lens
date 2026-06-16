@@ -1,0 +1,18 @@
+name: Improvement
+description: Suggest a sharper trigger, a clearer lens, or a better usage mode
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: The improvement
+      description: What would make the skill trigger better or give better design guidance?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      description: The situation where the current behavior falls short.
+    validations:
+      required: false

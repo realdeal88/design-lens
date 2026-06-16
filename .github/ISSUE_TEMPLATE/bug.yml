@@ -1,0 +1,44 @@
+name: Bug / misfire
+description: The skill didn't trigger when it should have, triggered when it shouldn't, or gave wrong guidance
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What did the skill do (or fail to do)?
+      placeholder: e.g. "Asked Claude to review a permission prompt, but the Responsibility lens never fired."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: What should the skill have done instead?
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of misfire
+      options:
+        - Should have triggered but didn't
+        - Triggered when it shouldn't have
+        - Triggered, but gave wrong/weak guidance
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: How to reproduce
+      description: The prompt or situation, so it can be reproduced.
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: design-lens version
+      placeholder: e.g. 1.0.0
+    validations:
+      required: false

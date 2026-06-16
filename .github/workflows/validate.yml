@@ -1,0 +1,38 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate JSON manifests
+        run: |
+          for f in .claude-plugin/plugin.json .claude-plugin/marketplace.json; do
+            echo "jq → $f"
+            jq empty "$f"
+          done
+
+      - name: Plugin manifest has required fields + correct name
+        run: |
+          jq -e '.name and .version and .description' .claude-plugin/plugin.json > /dev/null
+          test "$(jq -r '.name' .claude-plugin/plugin.json)" = "design-lens"
+
+      - name: Marketplace lists the plugin from this repo
+        run: |
+          test "$(jq -r '.plugins[0].name' .claude-plugin/marketplace.json)" = "design-lens"
+          test "$(jq -r '.plugins[0].source' .claude-plugin/marketplace.json)" = "./"
+
+      - name: Skill frontmatter present and named
+        run: |
+          head -1 skills/design-lens/SKILL.md | grep -q '^---$'
+          grep -q '^name: design-lens$' skills/design-lens/SKILL.md
+          grep -q '^description:' skills/design-lens/SKILL.md
+
+      - name: Bundled reference present
+        run: test -f skills/design-lens/references/design-principles.md
