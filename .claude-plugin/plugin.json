@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "design-lens",
+  "displayName": "design-lens — Eight Lenses for Great Design",
+  "version": "1.0.0",
+  "description": "A complete framework for making and judging great design — eight lenses (Purpose, Agency, Responsibility, Familiarity, Flexibility, Simplicity, Craft, Delight) that turn a vague 'make it good' into concrete, defensible decisions. Auto-invokes whenever design quality matters on any platform — web, mobile, desktop, product: building, redesigning, or critiquing any UI, flow, or component, plus design decisions from feature-scoping to permission prompts to accessibility.",
+  "author": {
+    "name": "realdeal88",
+    "url": "https://github.com/realdeal88"
+  },
+  "homepage": "https://github.com/realdeal88/design-lens",
+  "repository": "https://github.com/realdeal88/design-lens",
+  "license": "MIT",
+  "keywords": [
+    "design",
+    "ui-design",
+    "ux",
+    "design-principles",
+    "design-review",
+    "product-design",
+    "usability",
+    "accessibility",
+    "claude-code",
+    "claude-code-skill",
+    "claude-code-plugin",
+    "anthropic",
+    "claude"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "design-lens",
+  "owner": {
+    "name": "realdeal88"
+  },
+  "metadata": {
+    "description": "Eight lenses for great design — an auto-invoked decision-and-critique framework for Claude Code.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "design-lens",
+      "source": "./",
+      "displayName": "design-lens — Eight Lenses for Great Design",
+      "description": "A complete framework for making and judging great design. Eight lenses — Purpose, Agency, Responsibility, Familiarity, Flexibility, Simplicity, Craft, Delight — encoded as working questions, usage modes (build / review / single-decision), and a self-audit checklist. Auto-invokes whenever design quality matters, on any platform.",
+      "version": "1.0.0",
+      "author": {
+        "name": "realdeal88"
+      },
+      "homepage": "https://github.com/realdeal88/design-lens",
+      "repository": "https://github.com/realdeal88/design-lens",
+      "license": "MIT",
+      "category": "design",
+      "keywords": [
+        "design",
+        "ui",
+        "ux",
+        "design-principles",
+        "design-review",
+        "product-design",
+        "claude-code"
+      ]
+    }
+  ]
+}
